@@ -1,5 +1,5 @@
-define({
-    
+module.exports = {
+
     mixin: function(target, src) {
       for (var name in src) {
         if (src.hasOwnProperty(name) && !target.hasOwnProperty(name)) {
@@ -7,7 +7,7 @@ define({
         }
       }
     },
-   
+
     hashcopy: function(obj) {
       var ret = obj.constructor();
       for (var p in obj) {
@@ -18,5 +18,5 @@ define({
       return ret;
     }
 
- 
-});
+
+};
